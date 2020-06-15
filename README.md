@@ -1,7 +1,9 @@
 # Password-manager-GUI
 GUI version Password manager and generator.
 
-# Recommended
+[Click here](https://github.com/gowtham758550/password-generator-and-manager)to see commandline version of password manager 
+
+## Recommended
 
 Command:
 pip install -r requirements.txt
