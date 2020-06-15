@@ -9,3 +9,7 @@ Command:
 pip install -r requirements.txt
      
 The GUI is created using Tkinter. Use this and give your feedbacks      
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
