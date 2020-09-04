@@ -2,7 +2,7 @@
 
 # Password-Manager-and-Generator-GUI
 
-Latest release version-2.1
+Latest release version - 2.1
 
 
 ## Setup and Install
