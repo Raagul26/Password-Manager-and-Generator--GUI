@@ -27,10 +27,10 @@ Latest release version - 2.1
 ### Contributors 
 
 #### FrontEnd
-  * ![Raagul](https://github.com/Raagul26/) 
+  * ![Raagul26](https://github.com/Raagul26/) 
 #### BackEnd
-  * ![Gowtham](https://github.com/gowtham758550/) 
-  * ![Anish](https://github.com/Anish-M-code/) 
+  * ![Gowtham758550](https://github.com/gowtham758550/) 
+  * ![AnishM](https://github.com/Anish-M-code/) 
 
 
 
