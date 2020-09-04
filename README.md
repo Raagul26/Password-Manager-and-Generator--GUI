@@ -29,8 +29,8 @@ Latest release version - 2.1
 #### FrontEnd
   * ![Raagul26](https://github.com/Raagul26/) 
 #### BackEnd
-  * ![Gowtham758550](https://github.com/gowtham758550/) 
-  * ![AnishM](https://github.com/Anish-M-code/) 
+  * ![gowtham758550](https://github.com/gowtham758550/) 
+  * ![Anish-M-code](https://github.com/Anish-M-code/) 
 
 
 
