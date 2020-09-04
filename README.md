@@ -12,7 +12,19 @@ Latest release version - 2.1
 ## Supported platforms
      Windows
      Linux
-     
+
+## Screenshots
+
+### Create Password
+<img src='https://github.com/Raagul26/Password-Manager-and-Generator--GUI/blob/master/Screenshots/create_pwd.PNG'>
+
+### Enter Password
+<img src='https://github.com/Raagul26/Password-Manager-and-Generator--GUI/blob/master/Screenshots/enter_pwd.PNG'>
+
+### Main Window To Generate And Manage Passwords
+<img src='https://github.com/Raagul26/Password-Manager-and-Generator--GUI/blob/master/Screenshots/window.PNG'>
+
+
 [Click here](https://github.com/gowtham758550/password-generator-and-manager) to see commandline version of password manager and generator
      
-This GUI is created using Tkinter. 
+## This program is created only for educational purpose.
