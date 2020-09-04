@@ -24,6 +24,11 @@ Latest release version - 2.1
 ### Main Window To Generate And Manage Passwords
 <img src='https://github.com/Raagul26/Password-Manager-and-Generator--GUI/blob/master/Screenshots/window.PNG'>
 
+### Contributors 
+* ![Gowtham](https://github.com/gowtham758550/) 
+* ![Anish](https://github.com/Anish-M-code/) 
+* ![Raagul](https://github.com/Raagul26/) 
+
 
 [Click here](https://github.com/gowtham758550/password-generator-and-manager) to see commandline version of password manager and generator
      
