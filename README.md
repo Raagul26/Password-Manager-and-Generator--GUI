@@ -7,8 +7,12 @@ Latest release version-2.1
 
 ## Setup and Install
      >> pip install -r requirements.txt
-     >> python3 PGM_GUI.pyw
+     >> python3 PMG_GUI.pyw
 
+## Supported platforms
+     Windows
+     Linux
+     
 [Click here](https://github.com/gowtham758550/password-generator-and-manager) to see commandline version of password manager and generator
      
 This GUI is created using Tkinter. 
