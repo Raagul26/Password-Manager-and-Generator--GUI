@@ -58,9 +58,9 @@ buffer_size = 64 * 1024
 temp_str2 = ""
 password = ''
 
-### Beginning of Pysecret Functions ###
+### Beginning of Share_Secret Functions ###
 
-''' These Functions are used from pysecret project https://github.com/anish-m-code/pysecret
+''' These Functions are used from share_secret project https://github.com/anish-m-code/share_secret
 
 # Copyright (C) 2018-2019 M.Anish <aneesh25861@gmail.com>
 #
@@ -77,76 +77,63 @@ password = ''
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
+A=('A','B','C','D','E','F','G','H','I','J','K','L','M','N','o','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9')
 
-A = ((0, 'A'), (1, 'B'), (2, 'C'), (3, 'D'), (4, 'E'), (5, 'F'), (6, 'G'), (7, 'H'), (8, 'I'), (9, 'J'), (10, 'K'),
-     (11, 'L'), (12, 'M'), (13, 'N'), (14, 'o'), (15, 'P'), (16, 'Q'), (17, 'R'), (18, 'S'), (19, 'T'), (20, 'U'),
-     (21, 'V'), (22, 'W'), (23, 'X'), (24, 'Y'), (25, 'Z'), (26, '0'), (27, '1'), (28, '2'), (29, '3'), (30, '4'),
-     (31, '5'), (32, '6'), (33, '7'), (34, '8'), (35, '9'))
-A = list(A)
-secrets.SystemRandom().shuffle(A)
-A = tuple(A)
-
-
-# converts Alphanumeric characters to numbers of base 36
+#converts Alphanumeric characters to numbers of base 36    
 def f(x):
-    store = []
-    for s in x:
-        count = 0
-        for i in range(36):
-            if A[i][1].lower() == s.lower():
-                store.append(A[i][0])
-                count = 1
-                break
-        if count == 0:
-            store.append(' ')
-    return tuple(store)
-
-
-# converts base 36 numbers to alphanumeric charactors.
+  store=[]
+  for s in x:
+    count=0
+    for i in range(36):
+        if A[i].lower()==s.lower():
+          store.append(i)
+          count=1
+          break
+    if count==0:
+      store.append(' ')
+  return tuple(store)                
+    
+#converts base 36 numbers to alphanumeric charactors.
 def rf(x):
-    store = []
-    q = ''
-    for s in x:
-        count = 0
-        for i in range(36):
-            if A[i][0] == s:
-                store.append(A[i][1])
-                count = 1
-                break
-        if count == 0:
-            store.append(' ')
-    q = ''.join(store)
-    return q
-
-
-# Fetch key
+  store=[]
+  q=''
+  for s in x:
+    count=0
+    for i in range(36):
+        if i==s:
+          store.append(A[i])
+          count=1
+          break
+    if count==0:
+      store.append(' ')
+  q=''.join(store)
+  return q
+        
+#Fetch key
 def ikey(x):
     with open('key.txt') as f:
-        m = f.read()
+       m=f.read()
     return m
 
-
-# encrypts a given string and returns ciphertxt (no file generated!)
+#encrypts a given string and returns ciphertxt (no file generated!)
 def en(msg):
-    ciphertxt = []
-    x = f(msg)
-    y = f(ikey(msg))
-    if len(x) <= len(y):
+    ciphertxt=[]
+    x=f(msg)
+    y=f(ikey(msg))
+    if len(x)<=len(y):
         for i in range(len(x)):
-            if type(x[i]) == int and type(y[i]) == int:
-                ciphertxt.append(((x[i] + y[i]) % 36))
+            if type(x[i]) is int and type(y[i]) is int:
+                ciphertxt.append(((x[i]+y[i])%36))
             else:
                 ciphertxt.append(' ')
     else:
-        x = input('Press any key to continue...')
-        exit(1)
-    ciphertxt = tuple(ciphertxt)
-    ctxt = rf(ciphertxt)
-    shk = rf(y)
+        x=input('Press any key to continue...')
+        sys.exit(1)
+    ciphertxt=tuple(ciphertxt)
+    ctxt=rf(ciphertxt)
+    shk=rf(y)
     return ctxt
-
-
-### End of Pysecret Functions ###
+### End of Share_Secret Functions ###
 
 
 # function to hash
