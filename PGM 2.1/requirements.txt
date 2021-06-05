@@ -1,4 +1,4 @@
 pyAesCrypt==0.4.3
 requests==2.24.0
-urllib3==1.25.10
+urllib3==1.25.0
 Pillow==8.1.1
