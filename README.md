@@ -8,6 +8,19 @@ Latest release version - 2.1
 ## Setup and Install
      >> pip install -r requirements.txt
      >> python3 PMG_GUI.pyw
+     
+### Note:
+
+ For Debian/Ubuntu based Linux Distros install: -
+        
+```
+sudo apt install python3-pil.imagetk
+```
+For Fedora and Redhat family Linux Distros: -
+        
+```
+sudo dnf install python3-pillow.tk
+```
 
 ## Supported platforms
      Windows
